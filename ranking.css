@@ -1,0 +1,88 @@
+
+.img1{
+  float: right;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+    position: absolute;
+    width: 90%; 
+    left: 68%; 
+    top: 70px;
+    font-size: large; 
+    font-style: italic;
+    color: grey;
+    
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Media Queries para móviles */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding: 40px;
+    }
+}
+
+.nav {
+    padding: 15px 20px; 
+  }
+  
+  .nav .search-box {
+    right: 20px; 
+  }
+  
+ 
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+      padding: 15px 50px;
+    }
+    .nav .search-box {
+      right: 100px;
+      max-width: 400px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .nav {
+      padding: 15px 100px;
+    }
+    .nav .search-box {
+      right: 150px;
+    }
+  }
+  
