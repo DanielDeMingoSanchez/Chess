@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<form id="formularioContacto" action="pagina_destino.html" method="post">
+    <div class="grid-container">
+        <div class="grid-item">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="grid-item">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="grid-item">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <div class="grid-item">
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+</form>
+
+<script src="validacion.js"></script>
+</body>
+</html>
