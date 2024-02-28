@@ -1,13 +1,14 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: Arial, sans-serif;
+    font-family: 'popins',sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh; 
     background-color: #474947;
 }
+
 
 nav {
     display: flex;
@@ -92,12 +93,14 @@ h2{
   text-align: center;
   color: #ffffff;
   font-size: 50px;
-filter: drop-shadow(10px 10px 15px rgb(147, 172, 5));
+  text-decoration: underline;
+  text-transform: uppercase;
+  filter: drop-shadow(10px 10px 15px rgb(147, 172, 5));
 }
 section img{
-  display: block;
-  font-size: 50px;
-  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
 }
 
@@ -107,6 +110,28 @@ section img{
   flex-wrap: wrap;
   justify-content: center;
 }
+.parag{
+  width: 100%;
+  box-shadow: 8px 8px 10px rgb(214, 233, 186);
+ 
+  
+}
+.parag p{
+color: rgb(194, 230, 37);
+font-size: 25px;
+
+}
+
+.parag p::first-letter{
+  font-size: 50px;
+  color: #1521cc;
+}
+ul li {
+  color: #fefffc;
+  font-size: 20px;
+  text-align: start;
+  margin: 10px;
+}
 
 /* Estilos de las tarjetas de imagen */
 .image-card {
@@ -115,14 +140,14 @@ section img{
   width: 33.333%;
   display: flex;
   justify-content: center;
-  position: relative; /* Para el posicionamiento de la descripción */
+  position: relative; 
 }
 
 .image-card a {
   display: flex;
   justify-content: center;
   position: relative;
-  text-decoration: none; /* Eliminar el subrayado de los enlaces */
+  text-decoration: none; 
 }
 
 .image-card img {
@@ -133,22 +158,60 @@ section img{
 
 .image-card span {
   position: absolute;
-  bottom: 10px; /* Ajusta según necesidad */
+  bottom: 10px; 
   left: 0;
   width: 100%;
   text-align: center;
-  color: #fff; /* Color del texto */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  padding: 5px 0; /* Espaciado interior para el texto */
+  color: #fff; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 5px 0;
 }
 
-/* Media queries para la versión móvil */
+/* Media por la versión móvil */
 @media (max-width: 768px) {
   .image-card {
       width: 100%;
   }
+ .dropbtn {
+  background-color: #0a6342;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  display: flex;
+  position: fixed;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+}
+ header button{
+  display: none;
+ }
 
 
 
@@ -279,25 +342,43 @@ section img{
 }
 
 
-.parag{
-  width: 100%;
-  box-shadow: 8px 8px 10px rgb(214, 233, 186);
-  background-color: #424040;
-  
-}
-.parag p{
-color: rgb(194, 230, 37);
-font-size: 25px;
 
-}
 
-.parag p::first-letter{
-  font-size: 50px;
-  color: #1521cc;
-}
-ul li {
-  color: #fefffc;
-  font-size: 20px;
-  text-align: start;
-  margin: 10px;
-}
+
+
+
+
+
+/* Add this CSS for the burger menu */
+
+
+/*@media (max-width: 600px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #008000;
+  }
+
+  nav ul.show {
+      display: flex;
+  }
+
+  .burger-menu {
+      display: block;
+  }
+
+  nav ul li {
+      margin: 0;
+      text-align: center;
+  }
+
+  nav ul li a {
+      padding: 15px;
+      display: block;
+      color: #fff;
+  }
+}*/
